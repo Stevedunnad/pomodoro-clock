@@ -1,17 +1,15 @@
 import React from 'react';
 import './App.css';
+import Break from './components/Break';
+import Session from './components/Session';
 
 function App() {
   return (
     <div className="App">
-      <p id="break-label">break</p>
-      <p id="session-label">session</p>
-      <button id="break-decrement"></button>
-      <button id="session-decrement"></button>
-      <button id="break-increment"></button>
-      <button id="session-increment"></button>
+      <Break />
+      <Session />
     </div>
-  );
+  )
 }
 
 export default App;
