@@ -1,23 +1,8 @@
-import React, { useEffect, useState } from "react"
+import React from "react"
 import moment from 'moment';
 
-function Break() {
-
-  const [breakLength, setBreakLength] = useState(300)
-
-  function decBreakByOneMin() {
-    const newBreakLength = breakLength - 60;
-
-    if (newBreakLength < 0) {
-      setBreakLength(0)
-    } else {
-      setBreakLength(newBreakLength)
-    }
-  }
-
-  function incBreakByOneMin() {
-    setBreakLength(breakLength + 60)
-  }
+//props are destructured
+function Break({ breakLength, decBreakByOneMin, incBreakByOneMin }) {
 
   const breakLengthInMins = moment.duration(breakLength, 's').minutes()
 
