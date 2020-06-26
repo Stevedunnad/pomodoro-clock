@@ -8,6 +8,8 @@ function App() {
       <p id="session-label">session</p>
       <button id="break-decrement"></button>
       <button id="session-decrement"></button>
+      <button id="break-increment"></button>
+      <button id="session-increment"></button>
     </div>
   );
 }
