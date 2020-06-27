@@ -38,6 +38,10 @@ function App() {
     setSessionLength(sessionLength + 60)
   }
 
+  function handleResetButtonClick() {
+
+  }
+
   return (
     <div className="App">
       <Break
@@ -45,7 +49,7 @@ function App() {
         decBreakByOneMin={decBreakByOneMin}
         incBreakByOneMin={incBreakByOneMin}
       />
-      <TimeLeft sessionLength={sessionLength} />
+      <TimeLeft breakLength={breakLength} sessionLength={sessionLength} />
       <Session
         sessionLength={sessionLength}
         decSessionByOneMin={decSessionByOneMin}
